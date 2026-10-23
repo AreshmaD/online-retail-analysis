@@ -95,7 +95,16 @@ Running the complete notebook also requires the SQLite database.
 
 ## Project status
 
-Excel analysis, SQL views, a Python notebook, and the Tableau dashboard have been developed. Supporting files and reproduction instructions are being organized for this repository.
+The repository includes the Python notebook, SQL view definitions,
+analysis charts, summary CSV exports, and setup instructions.
+The Tableau sales dashboard is published and linked above.
+
+Excel was used for initial exploration and reconciliation.
+The Excel workbook is maintained locally and is not included here.
+
+The analysis remains preliminary: product classification requires
+further review, and customer activity measures include purchases
+that may later have been cancelled.
 
 ## Data source
 
