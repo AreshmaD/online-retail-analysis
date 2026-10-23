@@ -93,6 +93,14 @@ Running the complete notebook also requires the SQLite database.
 - Raw quantity × unit-price total: £9,747,747.93
 - Net product candidate sales: £9,567,877.37
 
+### Reproduction check
+Tested from a fresh GitHub ZIP download on macOS. Rebuilt the SQLite
+database from the source CSV and saved SQL views, then restarted the
+Jupyter kernel and ran all notebook cells successfully.
+
+After running the SQL setup, click **Write Changes** in DB Browser
+before opening the database from Python.
+
 ## Project status
 
 The repository includes the Python notebook, SQL view definitions,
