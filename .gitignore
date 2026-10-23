@@ -1,0 +1,20 @@
+# Local databases
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Original source data
+online_retail_raw.csv
+Online Retail.xlsx
+
+# Notebook temporary files
+.ipynb_checkpoints/
+
+# macOS files
+.DS_Store
+
+# Python temporary files
+__pycache__/
+*.pyc
+.venv/
