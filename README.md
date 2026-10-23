@@ -61,6 +61,37 @@ transactions that may later have been cancelled.
 - Product classification remains preliminary.
 - Spending and repeat purchasing are associated; the analysis does not establish causation.
 
+## Running the analysis
+
+### Requirements
+- Python with pandas, matplotlib, and Jupyter Notebook
+- DB Browser for SQLite to import the source CSV
+
+### Setup
+1. Download or clone this repository.
+2. Download the original Excel dataset from the UCI source linked below.
+3. Export its original data sheet as `online_retail_raw.csv`.
+   Preserve all eight column headers and all 541,909 transaction rows.
+4. In DB Browser, create `retail_analysis.db` in the repository folder.
+5. Import the CSV as `retail_transactions`, enabling
+   "Column names in first line."
+6. Confirm the columns are InvoiceNo, StockCode, Description, Quantity,
+   InvoiceDate, UnitPrice, CustomerID, and Country.
+7. The SQL date conversion expects month/day/two-digit-year text,
+   such as `12/1/10 8:26`. Check the imported format before continuing.
+8. Run `sql/01_create_views.sql` once in the new database, then save
+   changes.
+9. Open `Retail_Portfolio_Analysis.ipynb` from the repository folder
+   and run the cells in order.
+
+The two included summary CSVs support the initial chart sections.
+Running the complete notebook also requires the SQLite database.
+
+### Validation targets
+- Source rows: 541,909
+- Raw quantity × unit-price total: £9,747,747.93
+- Net product candidate sales: £9,567,877.37
+
 ## Project status
 
 Excel analysis, SQL views, a Python notebook, and the Tableau dashboard have been developed. Supporting files and reproduction instructions are being organized for this repository.
