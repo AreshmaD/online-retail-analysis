@@ -66,6 +66,7 @@ transactions that may later have been cancelled.
 ### Requirements
 - Python with pandas, matplotlib, and Jupyter Notebook
 - DB Browser for SQLite to import the source CSV
+pip install -r requirements.txt
 
 ### Setup
 1. Download or clone this repository.
