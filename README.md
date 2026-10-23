@@ -34,6 +34,24 @@ Excel supported initial exploration and reconciliation. SQLite views made the fi
 - Investigated an apparent bestseller whose **£168,469.60** sale was offset by an equal cancellation.
 - Compared duplicate-handling approaches: excluding repeated normalized product rows reduced net candidate sales by **£21,380.98**, approximately **0.22%**.
 
+## Visual analysis
+
+### Monthly sales
+![Monthly net product candidate sales](charts/monthly_net_sales.png)
+
+December 2011 includes only December 1–9.
+
+### Next-month repeat purchasing
+![Next-month repeat purchasing by cohort](charts/cohort_next_month_repeat.png)
+
+Cohorts reflect first observed purchases, not necessarily new customers.
+
+### First-day spending and repeat purchasing
+![First-day spending and repeat purchasing](charts/first_day_spend_repeat.png)
+
+The relationship is observational. Purchase activity includes
+transactions that may later have been cancelled.
+
 ## Limitations
 
 - December 2011 contains only nine days of observations.
